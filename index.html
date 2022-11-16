@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQL664ZETZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PQL664ZETZ');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brice Eliasse - Développeur Full-Stack Laravel & Vue.js</title>
+    <meta name="description"
+        content="Développeur web créatif spécialisé en Laravel, VueJS et Bootstrap pour la création de CMS personnalisé, d'ERP, de jeu ou d'applications métiers. Wordpress quand c'est moins complexe !">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="js/moment.js" defer></script>
+    <script src="js/precise.js" defer></script>
+
+    <!-- <link rel="stylesheet" href="scss/bootstrap.css"> -->
+    <link rel="stylesheet" href="splide.min.css">
+    <link rel="stylesheet" href="css/bootstrap-purified.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div id="backdrop" class="d-none"></div>
+    <nav class="border-bottom py-2 position-sticky bg-white top-0 left-0 w-100">
+        <div class="d-none d-sm-flex container align-items-center justify-content-between">
+            <a class="no-underline" href="#">
+                <img src="img/logo.webp" height="68px" width="59px" class="logo" alt="Avatar de Brice Eliasse">
+            </a>
+            <div>
+                <a href="#" class="mx-3">Accueil</a>
+                <a href="#realisations" class="mx-3">Réalisations</a>
+                <a href="#a-propos" class="mx-3">À propos</a>
+                <a href="#contact" class="ms-3">Contact</a>
+            </div>
+        </div>
+
+        <div class="d-sm-none container px-4 d-flex align-items-center justify-content-between">
+            <a href="#">
+                <img src="img/logo.webp" height="54px" width="47px" class="logo" alt="Avatar de Brice Eliasse">
+            </a>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile closed">
+        <div class="d-flex align-items-center">
+            <a href="#" class="mx-3">
+                Accueil</a>
+            <img src="img/emojis/hey.webp" class="me-2" height="45px" width="45px" loading="lazy" alt="Emoji hello">
+        </div>
+        <div class="d-flex align-items-center">
+            <a href="#realisations" class="mx-3">
+                Réalisations</a>
+            <img src="img/emojis/write.webp" class="me-2" height="45px" width="45px" loading="lazy" alt="Emoji write">
+        </div>
+        <div class="d-flex align-items-center">
+            <a href="#a-propos" class="mx-3">
+                À propos</a>
+            <img src="img/emojis/tech.webp" class="me-2" height="45px" width="45px" loading="lazy" alt="Emoji tech">
+        </div>
+        <div class="d-flex align-items-center">
+            <a href="#contact" class="ms-3">
+                Contact</a>
+            <img src="img/emojis/contact.webp" loading="lazy" height="45px" width="45px" class="" me-2 alt="Emoji contact">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- nav -->
+
+    <div class="container">
+        <!-- home -->
+        <div class="row align-items-center my-md-7 mt-4 mb-7">
+            <div class="col-md-6">
+                <img src="img/emojis/hey.webp" width="75px" height="75px" class="emoji" loading="lazy" alt="Emoji hello">
+                <h1>Hey, je suis Brice Eliasse</h1>
+                <p class="mt-4 fs-5">Un développeur web avec <span id="xpyear">&nbsp;</span> années d'expériences, je code
+                    principalement avec Laravel/VueJS/Bootstrap mais j'apprécie bien Wordpress aussi. J'aime la
+                    simplicité.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/brice-eliasse.webp" alt="Photo de Brice Eliasse"
+                    class="img-fluid rounded shadow-sm d-block ms-auto" width="410" height="410">
+            </div>
+        </div>
+
+
+        <!-- work -->
+        <div id="realisations" class="d-flex justify-content-between align-items-center border-bottom">
+            <div class="d-flex align-items-center">
+                <img src="img/emojis/write.webp" width="75px" height="75px" class="emoji" loading="lazy" alt="Emoji write">
+                <h2 class="ms-4 mb-0">Quelques réalisations</h2>
+            </div>
+            <a class="d-none d-sm-block" href="https://cv.brice-eliasse.com" target="_blank">
+                Voir mon CV →
+            </a>
+        </div>
+
+
+        <div class="row gy-4 gx-md-5 mt-4 mb-7">
+
+            <div class="col-12">
+                <div class="row align-items-center mx-0 alert alert-1">
+                    <div class="col-md-6">
+                        <div class="my-3 m-md-4">
+                            <h3 class="text-body">Nekjeu - Défi tes amis</h3>
+                            <p class="mt-4 text-body">Jeu web en temps réel où l'on défi un ami sur la discographie de
+                                l'artiste Nekfeu. Le premier à trouver l'album de la musique diffusée gagne des points.
+                            </p>
+                            <div>
+                                <span class="badge badge-laravel">API Laravel</span>
+                                <span class="badge badge-vuejs">SPA VueJS</span>
+                                <span class="badge badge-express">Express</span>
+                                <span class="badge text-bg-dark">Socket.IO</span>
+                            </div>
+                            <div class="mt-4">
+                                <a class="fw-bold text-decoration-none" target="_blank"
+                                    href="https://nekjeu.fr">Découvrir le site →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <img src="img/projects/nekjeu.webp" width="250px" height="250px" class="img-fluid" alt="Visage de nekfeu">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="alert alert-2">
+                    <div class="m-3 m-md-4">
+                        <h3 class="text-body">Nanagames - Plateforme de jeux éducatifs</h3>
+                        <p class="mt-4 text-body">Site vitrine et son CMS personnalisé en Laravel permettant de gérer
+                            intégralement le site. 2 jeux web éducatifs développés en VueJS. </p>
+                        <div>
+                            <span class="badge badge-laravel">Laravel</span>
+                            <span class="badge badge-vuejs">SPA VueJS</span>
+                            <span class="badge badge-bootstrap">Bootstrap</span>
+                        </div>
+                        <div class="mt-4 mb-6">
+                            <!-- <a class="fw-bold text-decoration-none" target="_blank" href="https://nanagams.brice-eliasse.com">Découvrir
+                                le site →</a> -->
+                            <em>Ça arrive...</em>
+                        </div>
+                        <img src="img/projects/nanagames.webp" width="250px" height="250px" class="img-fluid d-block m-auto" alt="Logo de Nanagames">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="alert alert-3">
+                    <div class="m-3 m-md-4">
+                        <h3 class="text-body">Chiens de chasse - Agence de com'</h3>
+                        <p class="mt-4 text-body">Site vitrine présentant les chiens de chasse, deux passionés du web
+                            prêt à mettre leur technique et leur créativité à votre service.</p>
+                        <div>
+                            <span class="badge badge-laravel">Laravel</span>
+                            <span class="badge badge-bootstrap">Bootstrap</span>
+                        </div>
+                        <div class="mt-4 mb-6">
+                            <!-- <a class="fw-bold text-decoration-none" target="_blank" href="https://nekjeu.fr">Découvrir
+                                    le site →</a> -->
+                            <em>Ça arrive...</em>
+                        </div>
+                        <img src="img/projects/cdc.svg"  width="250px" height="250px" class="img-fluid d-block m-auto"
+                            alt="Logo des chiens de chasse">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <div class="row  align-items-center mx-0 alert alert-4">
+                    <div class="col-md-6">
+                        <div class="my-3 m-md-4">
+                            <h3 class="text-body">Bluewall - Génère ta photo Twitter</h3>
+                            <p class="mt-4 text-body">Détoure et place automatiquement une image sur un fond de briques
+                                bleues. Permet aux fans de la Karmine Corp de montrer leur soutien sur les réseaux
+                                sociaux.</p>
+
+                            <div class="mt-4">
+                                <a class="fw-bold text-decoration-none" target="_blank"
+                                    href="https://bluewall.brice-eliasse.com">Découvrir le site →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <img src="img/projects/bluewall.webp" width="250px" height="250px" class="img-fluid" alt="Dessin de supporter kcorp">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!-- about -->
+
+        <div id="a-propos" class="d-flex justify-content-between align-items-center border-bottom">
+            <div class="d-flex align-items-center">
+                <img src="img/emojis/tech.webp" loading="lazy" width="75px" height="75px" class="emoji" alt="Emoji tech">
+                <h2 class="ms-4 mb-0">À propos</h2>
+            </div>
+            <a href="https://www.linkedin.com/in/brice-eliasse/" class="d-none d-sm-block" target="_blank" rel="nofollow">
+                Voir mon LinkedIn →
+            </a>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-6 pe-md-3 pe-lg-5">
+                <h3 class="h4 text-muted fw-semibold mb-3">Mon histoire</h3>
+                <p>Jeune développeur niçois de <span id="year"></span> ans, <span id="month"></span> mois, <span
+                        id="day"></span> jours, <span id="hour"></span> heures, <span id="min"></span> min et <span
+                        id="sec"></span>s. <br> Je me décris comme quelqu'un de
+                    curieux, créatif et polyvalent.
+                </p>
+                <p>
+
+                    J'ai étudié le web pendant 5 années et j'ai pû découvrir le monde professionnel grâce à
+                    l'alternance. Que ce soit pour des entreprises ou pour des projets personnels, j'ai dû établir des
+                    stratégies marketing, des plans de com' et même gérer une petite équipe en mode agile.
+                </p>
+                <p>
+                    Toutes ces expériences ont fait de moi un développeur Full Stack débrouillard et touche-à-tout, ce
+                    qui correspond bien à ma personnalité.</p>
+                <p class="m-0">Développer un site c'est aussi s'intéresser à l'ergonomie, à la performance, au
+                    référencement naturel et à la façon dont il faudra le promouvoir.</p>
+
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+                <h3 class="h4 text-muted fw-semibold mb-3 mt-5 mt-md-0">Où j'ai travaillé</h3>
+
+                <div class="works d-flex flex-grow-1 flex-column justify-content-between">
+                    <div class="work mb-2 mb-md-0">
+                        <small class="text-muted">2021-2022</small>
+                        <div class="d-flex align-items-center">
+                            <h4 class="h5 mb-0 fs-6">Nanaba - StartUp Ed-Tech</h4>
+                            <small class="text-muted ms-4">Nice, France</small>
+                        </div>
+                        <div class="mt-1">Développeur Full-Stack | Chef de Projet</div>
+                    </div>
+
+                    <div class="work mb-2 mb-md-0">
+                        <small class="text-muted">2020-2021</small>
+                        <div class="d-flex align-items-center">
+                            <h4 class="h5 mb-0 fs-6">MWA - Agence de com'</h4>
+                            <small class="text-muted ms-4">Nice, France</small>
+                        </div>
+                        <div class="mt-1">Développeur Full-Stack</div>
+                    </div>
+
+                    <div class="work mb-2 mb-md-0">
+                        <small class="text-muted">2019-2020</small>
+                        <div class="d-flex align-items-center">
+                            <h4 class="h5 mb-0 fs-6">Koedia</h4>
+                            <small class="text-muted ms-4">Sophia-Antipolis, France</small>
+                        </div>
+                        <div class="mt-1">Intégrateur Web</div>
+                    </div>
+
+                    <div class="work mb-2 mb-md-0">
+                        <small class="text-muted">2016-2019</small>
+                        <div class="d-flex align-items-center">
+                            <h4 class="h5 mb-0 fs-6">Visiplus Academy</h4>
+                            <small class="text-muted ms-4">Sophia-Antipolis, France</small>
+                        </div>
+                        <div class="mt-1">Développeur Web / Webdesigner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="h4 text-muted fw-semibold mb-3">Mes outils</h3>
+
+        <section class="splide" aria-label="Splide skill">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide border rounded p-4">
+                        <h4 class="fs-5 fw-semibold">Front-End</h4>
+                        <p class="mt-3">
+                            <small>
+                                Aujourd'hui si je devais faire un site ce serait probablement avec ces badboys (j'aime
+                                bien Tailwind et je veux apprendre React cela dit)
+                            </small>
+                        </p>
+                        <div class="mt-4">
+                            <img src="img/skills/sass.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-title="Sass" loading="lazy" class="me-2" alt="Logo Sass">
+                            <img src="img/skills/bootstrap.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Bootstrap" loading="lazy" class="me-2" alt="Logo Bootstrap">
+                            <img src="img/skills/vue.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="VueJS" loading="lazy" class="me-2" alt="logo VueJS">
+                        </div>
+                    </div>
+                    <div class="splide__slide border rounded p-4">
+                        <h4 class="fs-5 fw-semibold">Back-End</h4>
+                        <p class="mt-3">
+                            <small>
+                                Mon Framework préféré, je n'aurais jamais touché au Back-End sans lui, je m'en sers
+                                énormément pour faire des applications métiers notamment
+                            </small>
+                        </p>
+                        <div class="mt-4">
+                            <img src="img/skills/laravel.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Laravel" loading="lazy" class="me-2" alt="Logo Laravel">
+                        </div>
+                    </div>
+                    <div class="splide__slide border rounded p-4">
+                        <h4 class="fs-5 fw-semibold">CMS</h4>
+                        <p class="mt-3">
+                            <small>
+                                Sans mentir, dés qu'il est question d'un site e-commerce ou vitrine, je me penche
+                                d'abord vers ces solutions. C'est le meilleur rapport qualité/prix
+                            </small>
+                        </p>
+                        <div class="mt-4">
+                            <img src="img/skills/shopify.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Shopify" loading="lazy" class="me-2" alt="Logo Shopify">
+                            <img src="img/skills/wordpress.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Wordpress" loading="lazy" class="me-2" alt="Logo Wordpress">
+                            <img src="img/skills/woocommerce.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Woocommerce" loading="lazy" class="me-2" alt="Logo Woocommerce">
+                        </div>
+                    </div>
+                    <div class="splide__slide border rounded p-4">
+                        <h4 class="fs-5 fw-semibold">Audiovisuel</h4>
+                        <p class="mt-3">
+                            <small>
+                                Pour pousser un peu plus loin mes créations et parce que je ne fais pas que du code,
+                                j'utilise aussi ces outils (marketing, productions...)
+                            </small>
+                        </p>
+                        <div class="mt-4">
+                            <img src="img/skills/premiere.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Adobe Premiere Pro" loading="lazy" class="me-2" alt="Logo Premiere Pro">
+                            <img src="img/skills/photoshop.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Adobe Photoshop" loading="lazy" class="me-2" alt="Logo Photoshop">
+                            <img src="img/skills/canva.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Canva" loading="lazy" class="me-2" alt="Logo Canva">
+                        </div>
+                    </div>
+                    <div class="splide__slide border rounded p-4">
+                        <h4 class="fs-5 fw-semibold">Organisation</h4>
+                        <p class="mt-3">
+                            <small>
+                                Pour travailler seul ou en équipe, j'utilise toujours ces logiciels. Il m'arrive
+                                d'utiliser Fork comme client Git
+                            </small>
+                        </p>
+                        <div class="mt-4">
+                            <img src="img/skills/gitlab.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="GitLab" loading="lazy" class="me-2" alt="Logo GitLab">
+                            <img src="img/skills/vscode.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Visual Studio Code" loading="lazy" class="me-2" alt="Logo Vscode">
+                            <img src="img/skills/zeplin.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Zeplin" loading="lazy" class="me-2" alt="Logo Zeplin">
+                        </div>
+                    </div>
+                    <div class="splide__slide border rounded p-4">
+                        <h4 class="fs-5 fw-semibold">Soft skills</h4>
+                        <p class="mt-3">
+                            <small>
+                                Je suis quelqu'un de très polyvalent, créatif et sociable. J'aime coder mais je pense
+                                que ce n'est qu'un outil et non une fin en soi. Oh et le SEO est mon point fort
+                            </small>
+                        </p>
+                        <div class="mt-4">
+                            <img src="img/skills/seo.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Référencement Naturel" loading="lazy" class="me-2" alt="Logo SEO">
+                            <img src="img/skills/creative.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Créatif" loading="lazy" class="me-2" alt="Logo Creatif">
+                            <img src="img/skills/communication.svg" height="30px" width="40px" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-title="Communication" loading="lazy" class="me-2"
+                                alt="Logo Communication">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- contact -->
+        <div id="contact" class="d-flex mt-7 justify-content-between align-items-center border-bottom">
+            <div class="d-flex align-items-center">
+                <img src="img/emojis/contact.webp" loading="lazy" width="75px" height="75px" class="emoji" alt="Emoji contact">
+                <h2 class="ms-4 mb-0">Contact</h2>
+            </div>
+        </div>
+        <div class="row mt-5 mb-7">
+            <div class="col-md-6">
+                <p>
+                    Prochainement je vais tenter l'aventure au Canada mais je reste ouvert à toute proposition. Si tu as
+                    simplement envie de discuter, n'hésite pas non plus !
+                </p>
+                <a class="btn btn-dark mt-4 px-4 py-2 no-underline" href="mailto:hello@brice-eliasse.com">Me
+                    contacter</a>
+            </div>
+
+            <div class="col-md-6">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" defer></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            let burger = document.getElementById("burger");
+            let mobileMenu = document.querySelector(".mobile");
+            let backdrop = document.getElementById("backdrop");
+            let mobileLinks = document.querySelectorAll(".mobile a")
+
+
+            let calculateXpYear = () => {
+                var ageDifMs = Date.now() - 2016;
+                var ageDate = new Date(ageDifMs);
+                return Math.abs(ageDate.getUTCFullYear() - 2016);
+            }
+
+            document.getElementById("xpyear").innerHTML = calculateXpYear();
+
+
+
+            const toggleMobileMenu = () => {
+                burger.classList.toggle("open");
+                mobileMenu.classList.toggle("closed");
+                backdrop.classList.toggle("d-none");
+            }
+
+            backdrop.addEventListener("click", () => {
+                toggleMobileMenu();
+            })
+
+            burger.addEventListener('click', () => {
+                toggleMobileMenu();
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    toggleMobileMenu();
+                });
+            });
+
+            let birthday = moment([1998, 05, 04]);
+            birthday.hours(13);
+
+            let realTimeAge = () => {
+
+                let today = moment();
+                let diff = moment(birthday).preciseDiff(today, true);
+
+                document.getElementById("year").innerText = diff.years;
+                document.getElementById("month").innerText = diff.months;
+                document.getElementById("day").innerText = diff.days;
+                document.getElementById("hour").innerText = diff.hours;
+                document.getElementById("min").innerText = diff.minutes;
+                document.getElementById("sec").innerText = diff.seconds;
+
+            }
+
+            var timer = setInterval(realTimeAge, 1000);
+            realTimeAge();
+
+
+            var splide = new Splide('.splide', {
+                // pagination : false, 
+                gap: 40,
+                perPage: 3,
+                lazyLoad: "nearby",
+                perMove: 3,
+                arrows: false, // disbale arrows
+                breakpoints: {
+                    991: {
+                        perPage: 2,
+                    },
+                    768: {
+                        perPage: 1,
+                    },
+                }
+            });
+            splide.mount();
+
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        });
+    </script>
+</body>
+
+</html>
